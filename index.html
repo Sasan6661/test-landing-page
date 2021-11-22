@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/themify-icons.css" />
+    <link rel="stylesheet" href="./assets/css/keyframe.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav id="navbar">
+      <div id="topNav" class="sectionContainer navContainer">
+        <a href="#" id="logo" class="navItem" onclick="test3()">sasan </a>
+        <a href="#" id="navHome" class="navItem" onclick="test3()">Home </a>
+        <a href="#sectionAbout" id="navAbout" class="navItem" onclick="test3()"
+          >About
+        </a>
+        <a
+          href="#sectionService"
+          id="navService"
+          class="navItem"
+          onclick="test3()"
+          >Service
+        </a>
+        <a
+          href="#sectionPortfolio"
+          id="navPortfolio"
+          class="navItem"
+          onclick="test3()"
+          >Portfolio
+        </a>
+        <a
+          href="#sectionContact"
+          id="navContact"
+          class="navItem"
+          onclick="test3()"
+          >Contact
+        </a>
+        <a href="javascript:void(0)" class="ti-menu" onclick="test2()"></a>
+      </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="sectionHome">
+      <div class="sectionContainer">
+        <div id="intro">
+          <h2>Hello, I'm</h2>
+          <h1>Sasan Synys</h1>
+          <h3>Web Developer and Programmer</h3>
+          <p>Nice to meet you there!</p>
+        </div>
+        <div class="socialMeida">
+          <a href="#" class="ti-facebook"></a>
+          <a href="#" class="ti-instagram"></a>
+          <a href="#" class="ti-twitter-alt"></a>
+          <a href="#" class="ti-github"></a>
+          <a href="#sectionContact" class="ti-email"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="sectionAbout">
+      <div class="sectionContainer aboutContainer">
+        <figure id="about">
+          <img src="./assets/img/synyster-1.jpg" alt="profile-picture" />
+        </figure>
+        <article>
+          <h1>About me</h1>
+          <div class="underline"></div>
+          <p>
+            My name is Sasan Synys, and my portfolio is representation of all
+            that I've learned and accomplished as a computer programming and
+            engineering student at the Karakura University. I am working on an
+            app that allows people to order merchandise from their desktop or
+            phone, won an award at my region. I also design website and mobile
+            apps for small businesses.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Service -->
+    <section id="sectionService">
+      <div class="sectionContainer serviceContainer">
+        <article>
+          <h1>What I can do?</h1>
+          <div class="underline"></div>
+        </article>
+        <div class="work">
+          <article>
+            <span class="ti-world"></span>
+            <h2>Fullstack Developer</h2>
+            <p>
+              I design and create websites for small business for people all
+              over the world.
+            </p>
+          </article>
+          <article>
+            <span class="ti-pencil-alt"></span>
+            <h2>Web Designer</h2>
+            <p>
+              I design and create websites for small business for people all
+              over the world.
+            </p>
+          </article>
+          <article>
+            <span class="ti-write"></span>
+            <h2>Web Developer</h2>
+            <p>
+              I design and create websites for small business for people all
+              over the world.
+            </p>
+          </article>
+          <article>
+            <span class="ti-desktop"></span>
+            <h2>Desktop Apps Developer</h2>
+            <p>
+              I design and create websites for small business for people all
+              over the world.
+            </p>
+          </article>
+          <article>
+            <span class="ti-tablet"></span>
+            <h2>Mobile Apps Designer</h2>
+            <p>
+              I design and create websites for small business for people all
+              over the world.
+            </p>
+          </article>
+          <article>
+            <span class="ti-mobile"></span>
+            <h2>Mobile Apps Developer</h2>
+            <p>
+              I design and create websites for small business for people all
+              over the world.
+            </p>
+          </article>
+        </div>
+      </div>
+      <div class="skill"></div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="sectionPortfolio">
+      <div class="sectionContainer portfolioContainer">
+        <div>
+          <h1>Some of my works</h1>
+          <div class="underline"></div>
+          <div class="tagsList">
+            <a href="javascript:void(0)" onclick="filterItem1()">all</a>
+            <span>|</span>
+            <a href="javascript:void(0)" onclick="filterItem2()">web</a>
+            <span>|</span>
+            <a href="javascript:void(0)" onclick="filterItem3()">desktop</a>
+            <span>|</span>
+            <a href="javascript:void(0)" onclick="filterItem4()">mobile</a>
+          </div>
+        </div>
+        <div class="portoItem">
+          <div id="item-1" class="all web mobile">
+            <img src="./assets/img/portfolio/item-portfolio (1).png" alt="" />
+          </div>
+          <div id="item-2" class="all mobile">
+            <img src="./assets/img/portfolio/item-portfolio (2).png" alt="" />
+          </div>
+          <div id="item-3" class="all web desktop mobile">
+            <img src="./assets/img/portfolio/item-portfolio (3).png" alt="" />
+          </div>
+          <div id="item-4" class="all web">
+            <img src="./assets/img/portfolio/item-portfolio (4).png" alt="" />
+          </div>
+          <div id="item-5" class="all desktop mobile">
+            <img src="./assets/img/portfolio/item-portfolio (5).png" alt="" />
+          </div>
+          <div id="item-6" class="all desktop">
+            <img src="./assets/img/portfolio/item-portfolio (6).png" alt="" />
+          </div>
+          <div id="item-7" class="all desktop">
+            <img src="./assets/img/portfolio/item-portfolio (7).png" alt="" />
+          </div>
+          <div id="item-8" class="all web">
+            <img src="./assets/img/portfolio/item-portfolio (8).png" alt="" />
+          </div>
+          <div id="item-9" class="all web desktop">
+            <img src="./assets/img/portfolio/item-portfolio (9).png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="sectionContact">
+      <div class="sectionContainer contactContainer">
+        <article>
+          <h1>GET IN TOUCH</h1>
+          <div class="underline"></div>
+          <p id="msg">
+            <strong>Hey!</strong> We are looking forward to discussing new
+            projects, create ideas or oppurities to be part of your visions! If
+            you have any question, please feel free to drop me a line. If you
+            don't get an answer immediately, I might just be away from computer.
+            I'll get back to you soon as I can!
+          </p>
+          <div class="myLine">
+            <span class="ti-email"></span>
+            <p>sasan_synys@email.com</p>
+          </div>
+          <div class="myLine">
+            <span class="ti-mobile"></span>
+            <p>+62 891 0123 4567</p>
+          </div>
+          <div class="myLine">
+            <span class="ti-map-alt"></span>
+            <p>
+              Jalan Kenangan, Bersama Mantan, Dibawah Hujan, Dino Ajur <br />
+              Kode Pos : 98765
+            </p>
+          </div>
+        </article>
+        <form action="javascript:void(0)">
+          <h2>Contact Us</h2>
+          <input type="text" placeholder="Enter your name" />
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email address"
+          />
+          <textarea name="message" placeholder="Enter your message"></textarea>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="socialMeida">
+        <a href="#" class="ti-facebook"></a>
+        <a href="#" class="ti-instagram"></a>
+        <a href="#" class="ti-twitter-alt"></a>
+        <a href="#" class="ti-github"></a>
+        <a href="#sectionContact" class="ti-email"></a>
+      </div>
+      <article>
+        <p>site design &COPY; 2021 Sasan Synys</p>
+      </article>
+    </footer>
+
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>

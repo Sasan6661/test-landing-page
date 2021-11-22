@@ -1,0 +1,774 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap");
+
+*,
+:root {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* primary color */
+  --primary-color-25: hsl(163, 71%, 98%);
+  --primary-color-50: #eafaf5;
+  --primary-color-100: #d2f4ea;
+  --primary-color-200: #a5e9d4;
+  --primary-color-300: #78debf;
+  --primary-color-400: #4ed4ac;
+  --primary-color-500: #20cb98;
+  --primary-color-600: #1aa179;
+  --primary-color-700: #13795b;
+  --primary-color-800: #0d503c;
+  --primary-color-900: #06281e;
+
+  /* second color */
+
+  /* gray color */
+  --color-gray-50: #f7f8f8;
+  --color-gray-100: #eff0f2;
+  --color-gray-200: #dee1e5;
+  --color-gray-300: #ced3d7;
+  --color-gray-400: #bdc4ca;
+  --color-gray-500: #adb5bd;
+  --color-gray-600: #8a9197;
+  --color-gray-700: #686d71;
+  --color-gray-800: #45484c;
+  --color-gray-900: #232426;
+
+  /* other color */
+  --color-black: #030302;
+  --color-dark: #212529;
+  --color-white: #fcfcfc;
+  --color-light: #f8f9fa;
+
+  /* backgroud */
+  --background-1: linear-gradient(
+    135deg,
+    var(--primary-color-300) 0%,
+    var(--primary-color-300) 5%,
+    var(--primary-color-25) 5%,
+    var(--primary-color-25) 95%,
+    var(--primary-color-300) 95%,
+    var(--primary-color-300) 100%
+  );
+  --background-2: linear-gradient(
+    45deg,
+    var(--primary-color-300) 0%,
+    var(--primary-color-300) 3%,
+    var(--color-white) 3%,
+    var(--color-white) 97%,
+    var(--primary-color-300) 97%,
+    var(--primary-color-300) 100%
+  );
+  --background-2-hover: linear-gradient(
+    45deg,
+    var(--primary-color-900) 3%,
+    var(--primary-color-900) 0%,
+    var(--primary-color-500) 3%,
+    var(--primary-color-500) 97%,
+    var(--primary-color-900) 97%,
+    var(--primary-color-900) 100%
+  );
+
+  /* sizing */
+  --box-min-size: 0;
+  --box-max-size: 1080px;
+
+  /* box shadow */
+  --box-shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  --box-shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.1);
+  --box-shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.1);
+  --box-shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.1);
+  --box-shadow-5: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+body {
+  background: var(--primary-color-50);
+}
+
+body section {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+p,
+a {
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 1px;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+article p {
+  line-height: 1.75em;
+}
+
+/* ----- for all section ----- */
+.sectionContainer {
+  width: 90%;
+  max-width: var(--box-max-size);
+  margin: 0 auto;
+  display: flex;
+  /* delete leter */
+  /* background: rgba(255, 0, 0, 0.2); */
+}
+
+.socialMeida a {
+  width: 1.75em;
+  height: 1.75em;
+  margin: 0.25em;
+  color: var(--color-black);
+  font-size: 1.25em;
+  background: white;
+  border: 4px solid white;
+  border-radius: 50%;
+  outline: 2px solid white;
+}
+
+.socialMeida > *:hover {
+  color: var(--primary-color-500);
+  background: var(--color-black);
+  border: 4px solid var(--color-black);
+  outline: 2px solid var(--color-black);
+}
+
+.underline {
+  width: 5em;
+  height: 0.25em;
+  margin-left: 0.5em;
+  background: var(--primary-color-500);
+}
+
+/* ------------------------------------------------------------- */
+/* ---- section navbar ---- */
+#navbar {
+  width: 100%;
+  height: 2.75em;
+  top: 0;
+  position: fixed;
+  display: flex;
+  background: rgba(255, 255, 255, 0.025);
+  z-index: 1;
+}
+
+#navbar .navContainer {
+  display: flex;
+  flex-flow: row;
+  gap: 1px;
+  color: var(--color-white);
+  background: rgba(0, 0, 0, 0.01);
+}
+
+.navContainer .ti-menu {
+  display: none;
+}
+
+#logo {
+  margin-right: auto;
+  font: 400 1.5em "Roboto", sans-serif;
+  letter-spacing: 2px;
+}
+
+.navContainer > * {
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.navContainer a {
+  padding: 0 1em;
+  color: var(--color-white);
+  /* background-color: var(--color-black); */
+}
+
+.navContainer > *:not(:first-child):hover {
+  color: var(--primary-color-500);
+  background: rgba(255, 255, 255, 0.05);
+}
+/* ------------------------------------------------------------- */
+/* ---- section home ---- */
+#sectionHome {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/bg-3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#sectionHome .sectionContainer {
+  min-height: 100%;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+#intro {
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  color: var(--color-white);
+}
+
+#intro > * {
+  /* height: 100px;
+  width: 100px; */
+  padding: 0;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  /* color: red;
+  background-color: blue; */
+}
+
+#intro h1 {
+  margin: 0;
+  font-size: 4em;
+  font-weight: 500;
+}
+
+#sectionHome .socialMeida {
+  position: absolute;
+  right: 4em;
+  bottom: 2em;
+  letter-spacing: 0;
+}
+
+/* ------------------------------------------------------------- */
+/* ---- section about ---- */
+#sectionAbout {
+  background: var(--primary-color-300);
+  background: var(--background-1);
+}
+
+#sectionAbout .aboutContainer {
+  width: 90%;
+  padding: 4.75em 0 1em 0;
+  max-width: var(--box-max-size);
+  display: flex;
+}
+
+#sectionAbout figure {
+  width: 40%;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  border: 0.5em solid var(--color-white);
+  box-shadow: var(--box-shadow-2);
+}
+
+#sectionAbout img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+}
+
+#sectionAbout article {
+  width: 50%;
+  margin: auto;
+  padding: 1.25em;
+  justify-content: center;
+  /* border: 0.5em solid var(--color-white); */
+  box-shadow: var(--box-shadow-2);
+  /* background-color: var(--color-white); */
+  background: var(--background-2);
+}
+
+/* ------------------------------------------------------------- */
+/* ---- section service ---- */
+#sectionService {
+  background: var(--primary-color-300);
+  background: var(--background-1);
+}
+
+#sectionService .serviceContainer {
+  padding: 4.75em 0 1em 0;
+  display: flex;
+  flex-flow: column;
+}
+
+.serviceContainer > article {
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+
+.work {
+  padding: 1em;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  gap: 1em;
+  background: var(--color-white);
+}
+
+.work article {
+  width: 32%;
+  margin: auto;
+  padding: 1.25em;
+  /* flex: 1 1 1; */
+  justify-content: center;
+  box-shadow: var(--box-shadow-2);
+  background: var(--background-2);
+}
+
+.work article > * {
+  margin: 0;
+}
+
+.work article span {
+  font-size: 3em;
+}
+
+.work article h2 {
+  margin: 0.75em auto;
+}
+
+.work article:hover {
+  animation: key1 0.3s linear both;
+}
+
+.work article:not(:hover) {
+  animation: key2 0.3s linear both;
+}
+
+/* ------------------------------------------------------------- */
+/* ---- section portfolio ---- */
+#sectionPortfolio {
+  background: var(--primary-color-300);
+  background: var(--background-1);
+}
+
+#sectionPortfolio .portfolioContainer {
+  width: 90%;
+  padding: 4.75em 0 1em 0;
+  max-width: var(--box-max-size);
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.portfolioContainer > div:first-child {
+  width: 35%;
+}
+
+.portfolioContainer .tagsList {
+  display: inline-block;
+  margin: 1.5em auto;
+}
+
+.portfolioContainer .tagsList > a {
+  color: var(--color-black);
+  transition: color 0.3s ease-in-out;
+}
+
+.portfolioContainer .tagsList > a:hover {
+  color: var(--primary-color-300);
+}
+
+.portfolioContainer .tagsList > a:focus {
+  color: var(--primary-color-500);
+}
+
+.portoItem {
+  width: 65%;
+  padding: 0.75em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 0.75em;
+  background-color: var(--color-white);
+  box-shadow: var(--box-shadow-2);
+}
+
+.portoItem > div {
+  width: 30%;
+  margin: 0;
+  padding: 0;
+  /* flex: 1 1 1; */
+  display: inherit;
+  border: 0.5em solid var(--color-white);
+  outline: 0px solid var(--primary-color-300);
+  background: var(--color-white);
+  box-shadow: var(--box-shadow-2);
+  transition: all 0.1s linear;
+}
+
+.portoItem > div:hover {
+  border: 0.25em solid var(--primary-color-300);
+  outline: 0.25em solid var(--primary-color-300);
+  box-shadow: var(--box-shadow-3);
+}
+
+.portoItem > div > img {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+/* ------------------------------------------------------------- */
+/* ---- section contact ---- */
+#sectionContact {
+  background: var(--primary-color-300);
+  background: var(--background-1);
+}
+
+#sectionContact .contactContainer {
+  padding: 4.75em 0 1em 0;
+  display: flex;
+  flex-flow: row;
+}
+
+#sectionContact .contactContainer > * {
+  margin: auto;
+}
+
+#sectionContact .contactContainer article {
+  width: 45%;
+}
+
+.contactContainer article #msg {
+  padding: 1.25em;
+  background: var(--background-2);
+  box-shadow: var(--box-shadow-2);
+}
+
+.contactContainer article .myLine {
+  margin-bottom: 0.5em;
+  padding: 1em 1.75em;
+  display: flex;
+  flex-flow: row;
+  gap: 1.75em;
+  transition: color 0.1s ease-in-out;
+  background: var(--background-2);
+  box-shadow: var(--box-shadow-2);
+}
+
+.contactContainer article .myLine:hover {
+  color: var(--primary-color-50);
+  background: var(--background-2-hover);
+}
+
+.myLine span {
+  font-size: 2.75em;
+}
+
+.myLine * {
+  margin: auto 0;
+}
+
+.contactContainer form {
+  width: 40%;
+  margin-left: auto;
+  padding: 2em 1em 2.75em;
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  flex-flow: column;
+  gap: 1.75em;
+  background: var(--color-white);
+  box-shadow: var(--box-shadow-2);
+}
+
+.contactContainer form *:not(:first-child) {
+  width: 100%;
+  height: 2em;
+  border: 1px solid var(--primary-color-500);
+  outline: none;
+  background: var(--primary-color-25);
+}
+
+.contactContainer form textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 5em;
+  max-height: 5em;
+}
+
+.contactContainer form input:last-child {
+  width: 50%;
+  margin-left: auto;
+  cursor: pointer;
+  background: linear-gradient(
+    45deg,
+    var(--primary-color-500) 0%,
+    var(--primary-color-500) 7%,
+    var(--primary-color-25) 7%,
+    var(--primary-color-25) 93%,
+    var(--primary-color-500) 93%,
+    var(--primary-color-500) 100%
+  );
+}
+
+.contactContainer form *:not(:last-child):focus {
+  border-color: rgba(0, 0, 0, 0);
+  outline: 1px solid var(--primary-color-900);
+}
+
+.contactContainer form *:not(:first-child):active {
+  color: var(--color-white);
+  background: var(--primary-color-500);
+  border-color: rgba(0, 0, 0, 0);
+  outline: 1px solid var(--primary-color-300);
+}
+
+/* ---- footer ---- */
+footer {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0;
+  background-color: var(--color-black);
+}
+
+footer .socialMeida {
+  position: relative;
+  margin-top: 1.75em;
+}
+
+footer .socialMeida > *:hover {
+  color: var(--primary-color-500);
+  background: var(--primary-color-900);
+  border: 4px solid var(--primary-color-900);
+  outline: 2px solid var(--primary-color-900);
+}
+
+footer article {
+  color: var(--color-white);
+}
+
+footer article p {
+  margin: auto;
+  margin-top: 0.5em;
+}
+
+/* ---- soomth scrolling ---- */
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* when the screen width less than 768 pixels */
+/* --- nav section --- */
+@media only screen and (max-width: 768px) {
+  .navContainer a:nth-child(2),
+  .navContainer a:nth-child(3),
+  .navContainer a:nth-child(4),
+  .navContainer a:nth-child(5),
+  .navContainer a:nth-child(6) {
+    display: none;
+    /* background-color: burlywood; */
+  }
+
+  .navContainer.responsive a:nth-child(2),
+  .navContainer.responsive a:nth-child(3),
+  .navContainer.responsive a:nth-child(4),
+  .navContainer.responsive a:nth-child(5),
+  .navContainer.responsive a:nth-child(6) {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* ---- navBar ---- */
+  #navbar .navContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    color: var(--color-white);
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  .navContainer .ti-menu {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  #logo {
+    margin: 0;
+  }
+
+  .navContainer > * {
+    border: 14px solid var(--color-black);
+    text-align: center;
+  }
+
+  .navContainer > *:not(:first-child):hover {
+    background: var(--color-black);
+  }
+
+  .navContainer #logo {
+    border: 0.35em solid var(--color-black);
+  }
+
+  .navContainer a {
+    background-color: var(--color-black);
+  }
+}
+
+/* --- section home --- */
+@media only screen and (max-width: 768px) {
+  #sectionHome .sectionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #sectionHome .socialMeida {
+    position: absolute;
+    left: auto;
+    right: auto;
+  }
+
+  .socialMeida a {
+    color: var(--primary-color-600);
+  }
+}
+
+/* --- section about ---- */
+@media only screen and (max-width: 768px) {
+  #sectionAbout {
+    min-height: 100vh;
+    padding-top: 2.75em;
+    padding-bottom: 1.5em;
+  }
+
+  #sectionAbout .aboutContainer {
+    flex-flow: column;
+    gap: 1em;
+  }
+
+  #sectionAbout figure {
+    width: 100%;
+  }
+
+  #sectionAbout article {
+    width: 100%;
+    margin: auto;
+    padding: 1.25em;
+  }
+}
+
+/* --- section service --- */
+@media only screen and (max-width: 768px) {
+  #sectionService {
+    min-height: 100vh;
+    padding-top: 2.75em;
+    padding-bottom: 1.5em;
+  }
+
+  .serviceContainer > article {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  .work {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background: none;
+  }
+
+  .work article {
+    width: 100%;
+    margin: auto;
+  }
+
+  .work article > * {
+    margin: 0;
+  }
+
+  .work article span {
+    font-size: 2em;
+  }
+
+  .work article h2 {
+    margin: 0.75em auto;
+  }
+}
+
+/* section portfolio */
+@media only screen and (max-width: 768px) {
+  #sectionPortfolio .portfolioContainer {
+    flex-flow: column;
+  }
+
+  .portfolioContainer > div:first-child {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .portoItem {
+    width: 100%;
+    padding: 0.5em;
+    flex-flow: row wrap;
+    gap: 0.75em;
+    justify-content: space-evenly;
+  }
+
+  .portoItem > div {
+    width: 45%;
+    /* aspect-ratio: 1/1; */
+    /* margin: 0;
+    padding: 0;
+    flex: 1 1 1; */
+  }
+
+  .portoItem > div > img {
+    width: 100%;
+    aspect-ratio: 1/1;
+  }
+}
+
+/* section contact */
+@media only screen and (max-width: 768px) {
+  #sectionContact {
+    min-height: 100vh;
+    padding-top: 2.75em;
+    padding-bottom: 1.5em;
+    /* background-color: #4dd4ac; */
+  }
+
+  #sectionContact .contactContainer {
+    display: flex;
+    flex-flow: column;
+    gap: 2.75em;
+  }
+
+  #sectionContact .contactContainer article {
+    width: 100%;
+    background: none;
+  }
+
+  .contactContainer form {
+    padding: 1.75em 1em 2.75em;
+    width: 100%;
+    gap: 1.75em;
+  }
+
+  .contactContainer form input:last-child {
+    width: 100%;
+  }
+}

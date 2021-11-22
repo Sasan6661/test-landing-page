@@ -1,0 +1,277 @@
+/* ------------------------------------------ */
+/* keyframes */
+
+@keyframes key1 {
+  0% {
+    background: linear-gradient(
+      45deg,
+      var(--primary-color-200) 0%,
+      var(--primary-color-200) 5%,
+      var(--color-white) 5%,
+      var(--color-white) 95%,
+      var(--primary-color-200) 95%,
+      var(--primary-color-200) 100%
+    );
+  }
+  10% {
+    background: linear-gradient(
+      45deg,
+      var(--primary-color-200) 0%,
+      var(--primary-color-200) 5%,
+      var(--color-white) 5%,
+      var(--color-white) 95%,
+      var(--primary-color-200) 95%,
+      var(--primary-color-200) 100%
+    );
+  }
+  20% {
+    background: linear-gradient(
+      45deg,
+      var(--primary-color-200) 0%,
+      var(--primary-color-200) 10%,
+      var(--color-white) 10%,
+      var(--color-white) 90%,
+      var(--primary-color-200) 90%,
+      var(--primary-color-200) 100%
+    );
+  }
+  30% {
+    background: linear-gradient(
+      45deg,
+      var(--primary-color-200) 0%,
+      var(--primary-color-200) 15%,
+      var(--color-white) 15%,
+      var(--color-white) 85%,
+      var(--primary-color-200) 85%,
+      var(--primary-color-200) 100%
+    );
+  }
+  40% {
+    background: linear-gradient(
+      45deg,
+      var(--primary-color-200) 0%,
+      var(--primary-color-200) 20%,
+      var(--color-white) 20%,
+      var(--color-white) 80%,
+      var(--primary-color-200) 80%,
+      var(--primary-color-200) 100%
+    );
+  }
+  50% {
+    background: linear-gradient(
+      45deg,
+      var(--primary-color-200) 0%,
+      var(--primary-color-200) 25%,
+      var(--color-white) 25%,
+      var(--color-white) 75%,
+      var(--primary-color-200) 75%,
+      var(--primary-color-200) 100%
+    );
+  }
+  60% {
+    background: linear-gradient(
+      45deg,
+      var(--primary-color-200) 0%,
+      var(--primary-color-200) 30%,
+      var(--color-white) 30%,
+      var(--color-white) 70%,
+      var(--primary-color-200) 70%,
+      var(--primary-color-200) 100%
+    );
+  }
+  70% {
+    background: linear-gradient(
+      45deg,
+      var(--primary-color-200) 0%,
+      var(--primary-color-200) 35%,
+      var(--color-white) 35%,
+      var(--color-white) 65%,
+      var(--primary-color-200) 65%,
+      var(--primary-color-200) 100%
+    );
+  }
+  80% {
+    background: linear-gradient(
+      45deg,
+      var(--primary-color-200) 0%,
+      var(--primary-color-200) 40%,
+      var(--color-white) 40%,
+      var(--color-white) 60%,
+      var(--primary-color-200) 60%,
+      var(--primary-color-200) 100%
+    );
+  }
+  90% {
+    background: linear-gradient(
+      45deg,
+      var(--primary-color-200) 0%,
+      var(--primary-color-200) 45%,
+      var(--color-white) 45%,
+      var(--color-white) 55%,
+      var(--primary-color-200) 55%,
+      var(--primary-color-200) 100%
+    );
+  }
+  100% {
+    color: var(--primary-color-900);
+    background: linear-gradient(
+      45deg,
+      var(--primary-color-200) 0%,
+      var(--primary-color-200) 50%,
+      var(--color-white) 50%,
+      var(--color-white) 50%,
+      var(--primary-color-200) 50%,
+      var(--primary-color-200) 100%
+    );
+  }
+}
+
+@keyframes key2 {
+  0% {
+    color: var(--primary-color-900);
+    background: linear-gradient(
+      45deg,
+      var(--primary-color-200) 0%,
+      var(--primary-color-200) 50%,
+      var(--color-white) 50%,
+      var(--color-white) 50%,
+      var(--primary-color-200) 50%,
+      var(--primary-color-200) 100%
+    );
+  }
+  10% {
+    background: linear-gradient(
+      45deg,
+      var(--primary-color-200) 0%,
+      var(--primary-color-200) 45%,
+      var(--color-white) 45%,
+      var(--color-white) 55%,
+      var(--primary-color-200) 55%,
+      var(--primary-color-200) 100%
+    );
+  }
+  20% {
+    background: linear-gradient(
+      45deg,
+      var(--primary-color-200) 0%,
+      var(--primary-color-200) 40%,
+      var(--color-white) 40%,
+      var(--color-white) 60%,
+      var(--primary-color-200) 60%,
+      var(--primary-color-200) 100%
+    );
+  }
+  30% {
+    background: linear-gradient(
+      45deg,
+      var(--primary-color-200) 0%,
+      var(--primary-color-200) 35%,
+      var(--color-white) 35%,
+      var(--color-white) 65%,
+      var(--primary-color-200) 65%,
+      var(--primary-color-200) 100%
+    );
+  }
+  40% {
+    background: linear-gradient(
+      45deg,
+      var(--primary-color-200) 0%,
+      var(--primary-color-200) 30%,
+      var(--color-white) 30%,
+      var(--color-white) 70%,
+      var(--primary-color-200) 70%,
+      var(--primary-color-200) 100%
+    );
+  }
+  50% {
+    background: linear-gradient(
+      45deg,
+      var(--primary-color-200) 0%,
+      var(--primary-color-200) 25%,
+      var(--color-white) 25%,
+      var(--color-white) 75%,
+      var(--primary-color-200) 75%,
+      var(--primary-color-200) 100%
+    );
+  }
+  60% {
+    background: linear-gradient(
+      45deg,
+      var(--primary-color-200) 0%,
+      var(--primary-color-200) 20%,
+      var(--color-white) 20%,
+      var(--color-white) 80%,
+      var(--primary-color-200) 80%,
+      var(--primary-color-200) 100%
+    );
+  }
+  70% {
+    background: linear-gradient(
+      45deg,
+      var(--primary-color-200) 0%,
+      var(--primary-color-200) 15%,
+      var(--color-white) 15%,
+      var(--color-white) 85%,
+      var(--primary-color-200) 85%,
+      var(--primary-color-200) 100%
+    );
+  }
+  80% {
+    background: linear-gradient(
+      45deg,
+      var(--primary-color-200) 0%,
+      var(--primary-color-200) 10%,
+      var(--color-white) 10%,
+      var(--color-white) 90%,
+      var(--primary-color-200) 90%,
+      var(--primary-color-200) 100%
+    );
+  }
+  90% {
+    background: linear-gradient(
+      45deg,
+      var(--primary-color-200) 0%,
+      var(--primary-color-200) 5%,
+      var(--color-white) 5%,
+      var(--color-white) 95%,
+      var(--primary-color-200) 95%,
+      var(--primary-color-200) 100%
+    );
+  }
+  100% {
+    background: linear-gradient(
+      45deg,
+      var(--primary-color-200) 0%,
+      var(--primary-color-200) 3%,
+      var(--color-white) 3%,
+      var(--color-white) 97%,
+      var(--primary-color-200) 97%,
+      var(--primary-color-200) 100%
+    );
+  }
+}
+
+@keyframes key3 {
+  from {
+    background: linear-gradient(
+      45deg,
+      var(--primary-color-300) 0%,
+      var(--primary-color-300) 3%,
+      var(--color-white) 3%,
+      var(--color-white) 97%,
+      var(--primary-color-300) 97%,
+      var(--primary-color-300) 100%
+    );
+  }
+  to {
+    background: linear-gradient(
+      45deg,
+      var(--primary-color-300) 0%,
+      var(--primary-color-300) 50%,
+      var(--color-white) 50%,
+      var(--color-white) 50%,
+      var(--primary-color-300) 50%,
+      var(--primary-color-300) 100%
+    );
+  }
+}
